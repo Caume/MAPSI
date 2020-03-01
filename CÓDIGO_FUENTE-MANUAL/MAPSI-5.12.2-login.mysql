@@ -1,0 +1,13 @@
+create database autentica;
+connect autentica;
+
+CREATE TABLE usuario (
+id SMALLINT(3) UNSIGNED NOT NULL AUTO_INCREMENT,
+nombre VARCHAR(20) NOT NULL,
+password VARCHAR(32) NOT NULL,
+PRIMARY KEY (id),
+UNIQUE KEY nombre (nombre)
+);
+
+INSERT INTO usuario (nombre, password) VALUES ('Usuario1', MD5('pass123'));
+INSERT INTO usuario (nombre, password) VALUES ('Usuario2', MD5('kn0Px'));

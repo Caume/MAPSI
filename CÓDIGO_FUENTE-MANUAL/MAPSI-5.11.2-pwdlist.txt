@@ -1,0 +1,4 @@
+<?php
+$OK_USUARIO='admin';
+$OK_PASSWORD='d9a36435ccd8ffefb5f37776d1ac93b7';
+?>
